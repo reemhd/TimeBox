@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main %}
+
+<div id="date"></div>
+<div class="override">
+    <div class="right">
+
+        <!-- The time slots container element -->
+        <ul class="li" id="time-slots">
+            <br>
+            {% for time in times %}
+            <li class="time-slot">{{ time }}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+
+    <!-- top 3 -->
+    <div id="top">
+        <h3>Top 3 Tasks</h3>
+        <ul id="top-tasks">
+            <li>
+                <textarea class="one" id="first-task" placeholder="Task 1"></textarea>
+                <select class="start-time-select">
+                    <option disabled selected>From</option>
+                    {% for time in times %}
+                    <option value="{{ time }}">{{ time }}</option>
+                    {% endfor %}
+                </select>
+                <select class="end-time-select">
+                    <option disabled selected>To</option>
+                    {% for time in times %}
+                    <option value="{{ time }}">{{ time }}</option>
+                    {% endfor %}
+                </select>
+            </li>
+
+            <li><textarea class="two" id="second-task" placeholder="Task 2"></textarea></li>
+            <select class="start-time-select-second">
+                <option disabled selected>From</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+            <select class="end-time-select-second">
+                <option disabled selected>To</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+
+            <li><textarea class="three" id="third-task" placeholder="Task 3"></textarea></li>
+            <select class="start-time-select-third">
+                <option disabled selected>From</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+            <select class="end-time-select-third">
+                <option disabled selected>To</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+        </ul>
+
+
+
+    <!-- secondary -->
+        <h4>Secondary Tasks</h4>
+        <ul>
+            <li><textarea class="four" id="fourth-task" placeholder="Task 4"></textarea></li>
+            <select class="start-time-select-fourth">
+                <option disabled selected>From</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+            <select class="end-time-select-fourth">
+                <option disabled selected>To</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+
+            <li><textarea class="five" id="fifth-task" placeholder="Task 5"></textarea></li>
+            <select class="start-time-select-fifth">
+                <option disabled selected>From</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+            <select class="end-time-select-fifth">
+                <option disabled selected>To</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+
+            <li><textarea class="six" id="sixth-task" placeholder="Task 6"></textarea></li>
+            <select class="start-time-select-sixth">
+                <option disabled selected>From</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+            <select class="end-time-select-sixth">
+                <option disabled selected>To</option>
+                {% for time in times %}
+                <option value="{{ time }}">{{ time }}</option>
+                {% endfor %}
+            </select>
+        </ul>
+    </div>
+
+    <!-- brain dump  -->
+    <div id="braind">
+        <h4>Brain Dump</h4>
+        <textarea id="brain-dump" class="italic" placeholder="Brain dump your ideas here..."></textarea>
+    <!-- Save and Clear button -->
+         <div id="buttons">
+            <button class="btn btn-primary" id="save-button">Save</button>
+            <button class="btn btn-primary" id="clear-button">Clear</button>
+         </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+{% endblock %}

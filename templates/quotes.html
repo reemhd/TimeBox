@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotes
+{% endblock %}
+
+{% block main %}
+<div>
+      <div class="quote" id="quote-container">
+        <!-- The quote will be displayed here -->
+      </div>
+
+      <button class="btn btn-primary" id="generate-quote-btn">Generate quote</button>
+
+      <script>
+        // An array of quotes
+        const quotes = [
+          '"The only thing standing between you and your goal is the will to try and the belief that it is actually possible." - Joel Brown',
+          '"The key to productivity is focusing on the things that matter most." - Tim Ferriss',
+          '"It\'s not about time management, it\'s about energy management." - Tony Robbins',
+          '"The more that you read, the more things you will know. The more that you learn, the more places you\'ll go." - Dr. Seuss',
+          '"Don\'t wait. The time will never be just right." - Napoleon Hill',
+          '"The only way to do great work is to be passionate about what you do." - Steve Jobs',
+          '"The only limit to our realization of tomorrow will be our doubts of today." - Franklin D. Roosevelt',
+          '"The best time to plant a tree was 20 years ago. The second best time is now." - Chinese Proverb',
+          '"If you set your goals ridiculously high and it\'s a failure, you will fail above everyone else\'s success." - James Cameron',
+          '"People should pursue what they\'re passionate about. That will make them happier than pretty much anything else." - Elon Musk',
+          '"The only thing that makes sense to do is strive for greater collective enlightenment." - Elon Musk',
+          '"If you get up in the morning and think the future is going to be better, it is a bright day. Otherwise, it\'s not." - Elon Musk',
+        ];
+
+        // A function to generate a random quote
+        function generateRandomQuote() {
+          // Choose a random quote from the array
+          const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+          // Update the quote container with the new quote
+          document.getElementById("quote-container").innerHTML = quote;
+        }
+
+        // Add a click event listener to the generate quote button
+        document.getElementById("generate-quote-btn").addEventListener("click", generateRandomQuote);
+      </script>
+</div>
+
+{% endblock %}
