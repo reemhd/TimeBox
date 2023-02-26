@@ -1,18 +1,7 @@
 # TimeBox
 
-#### Description:
+## Description:
 For my final project for CS50, I created a web-based application called 'TimeBox' using Flask. Timeboxing is a time management technique in which a fixed amount of time is allocated for a specific activity. 
-
-I created a database that stores users' usernames and hashed passwords using SQLite database.  
-
-The user can register with a unique username and password.
-![Screenshot 2023-02-26 at 20 13 52](https://user-images.githubusercontent.com/113103959/221435009-6ff44fc3-ffa3-4b53-babc-6100a4cc77a1.png)
-
-They will be taken to the homepage (/) where they can write their tasks for the day. Once the user completes writing, they can click the save button, which then color-codes the time-slot section with associated tasks. The user can also choose to clear the page by clicking the clear button once they have completed their tasks.
-![Screenshot 2023-02-26 at 20 15 25](https://user-images.githubusercontent.com/113103959/221435050-4d0be522-3a7e-4b51-9afc-0cb5bef0bd7f.png)
-
-Finally, I added an 'Inspirational Quotes' section that generates random quotes to help keep the user motivated and productive! The user can then logout once they are done at the end of the day.
-![Screenshot 2023-02-26 at 20 15 55](https://user-images.githubusercontent.com/113103959/221435072-9ce89c0f-4e0e-4fe4-b643-44260cb087e4.png)
 
 ## Tech Stack:
 - Python
@@ -34,6 +23,17 @@ pip install flask-session
 ```
 flask run
 ```
+
+I created a database that stores users' usernames and hashed passwords using SQLite database.  
+
+The user can register with a unique username and password.
+![Screenshot 2023-02-26 at 20 13 52](https://user-images.githubusercontent.com/113103959/221435009-6ff44fc3-ffa3-4b53-babc-6100a4cc77a1.png)
+
+They will be taken to the homepage (/) where they can write their tasks for the day. Once the user completes writing, they can click the save button, which then color-codes the time-slot section with associated tasks. The user can also choose to clear the page by clicking the clear button once they have completed their tasks.
+![Screenshot 2023-02-26 at 20 15 25](https://user-images.githubusercontent.com/113103959/221435050-4d0be522-3a7e-4b51-9afc-0cb5bef0bd7f.png)
+
+Finally, I added an 'Inspirational Quotes' section that generates random quotes to help keep the user motivated and productive! The user can then logout once they are done at the end of the day.
+![Screenshot 2023-02-26 at 20 15 55](https://user-images.githubusercontent.com/113103959/221435072-9ce89c0f-4e0e-4fe4-b643-44260cb087e4.png)
 
 ## Implementation details:
 
