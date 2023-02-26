@@ -1,9 +1,9 @@
 # TimeBox
 
-## Description:
+## Description
 For my final project for CS50, I created a web-based application called 'TimeBox' using Flask. Timeboxing is a time management technique in which a fixed amount of time is allocated for a specific activity. 
 
-## Tech Stack:
+## Tech Stack
 - Python
 - Flask
 - Jinga
