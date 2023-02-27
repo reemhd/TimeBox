@@ -47,4 +47,4 @@ In 'index.html', I used a for loop to loop over the time so that I can list it o
 
 In the JS file, I first used an update date function to automatically update the day/date on the page. Finally, in my 'app.py' file, I wrote the Python code to configure my application. I used sessions so that the web server remembers information about each user that logs in. I also imported a few additional functions, such as 'generate_password_hash', to ensure that the passwords stored in my database are encrypted. Additionally, I used a function called 'login_required' that ensured that certain pages were only visible if the user was logged in. Some routes accepted both GET and POST methods, such as 'register' and 'log in', while others, such as 'quotes', only needed a GET method.
 
-#### Video Demo: https://www.youtube.com/watch?v=NozSnJuk33M!
+#### [Video Demo](https://www.youtube.com/watch?v=NozSnJuk33M)
